@@ -60169,7 +60169,7 @@ A.JG.prototype={
 aN(){this.bb()
 $.B.as$.push(new A.a3z(this))},
 O(a,b){var s=null
-return new A.vS(A.a7R(A.alP(A.a([A.ww(J.dR(window.localStorage.getItem("ACCOUNT_CHOOSER")),s,s,s,s,s,s),B.Jb,new A.i0(B.yx,A.aoV(B.yQ,new A.a3x(this)),s),new A.qb(this.d.b,new A.a3y(),s,t.AH)],t.V),B.Cr,B.qV),s,s),s)}}
+return new A.vS(A.a7R(A.alP(A.a([A.ww(J.dR(window.localStorage.getItem("uid"))+" AQUI",s,s,s,s,s,s),B.Jb,new A.i0(B.yx,A.aoV(B.yQ,new A.a3x(this)),s),new A.qb(this.d.b,new A.a3y(),s,t.AH)],t.V),B.Cr,B.qV),s,s),s)}}
 A.a3z.prototype={
 $1(a){var s
 window.localStorage.setItem("teste","teste")

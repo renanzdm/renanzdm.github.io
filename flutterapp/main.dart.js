@@ -17960,26 +17960,11 @@ SL:function SL(a,b){this.a=a
 this.b=b},
 SM:function SM(){},
 SN:function SN(a){this.a=a},
-A7(){var s=0,r=A.a3(t.H),q
-var $async$A7=A.a4(function(a,b){if(a===1)return A.a0(b,r)
-while(true)switch(s){case 0:if($.B==null)A.a95()
-$.B.toString
-q=$.NF()
-s=2
-return A.X(A.a8e(q),$async$A7)
-case 2:s=3
-return A.X(q.td("lista_games",t.z),$async$A7)
-case 3:if($.B==null)A.a95()
-q=$.B
-q.L1(B.D6)
-q.Az()
-return A.a1(null,r)}})
-return A.a2($async$A7,r)},
 DP:function DP(a){this.a=a},
 uR:function uR(a){this.a=a},
 JG:function JG(a,b){var _=this
 _.d=a
-_.a=null
+_.a=_.e=null
 _.b=b
 _.c=null},
 a3z:function a3z(a){this.a=a},
@@ -18390,6 +18375,21 @@ r=A.eL(a)
 r=r==null?null:r.b
 if(r==null)r=1
 return new A.u_(s,r,A.Dx(a),A.eD(a),null,A.dh())},
+A7(){var s=0,r=A.a3(t.H),q
+var $async$A7=A.a4(function(a,b){if(a===1)return A.a0(b,r)
+while(true)switch(s){case 0:if($.B==null)A.a95()
+$.B.toString
+q=$.NF()
+s=2
+return A.X(A.a8e(q),$async$A7)
+case 2:s=3
+return A.X(q.td("lista_games",t.z),$async$A7)
+case 3:if($.B==null)A.a95()
+q=$.B
+q.L1(B.D6)
+q.Az()
+return A.a1(null,r)}})
+return A.a2($async$A7,r)},
 asa(a,b){return b>60&&b/a>0.15},
 asb(a,b){if(A.ht(a))if(A.ht(b))if(a>b)return 1
 else if(a<b)return-1
@@ -60167,9 +60167,10 @@ av(){var s=t._q,r=A.a([],s),q=$.aS(),p=t.lc
 return new A.JG(new A.SL(new A.c7(r,q,p),new A.c7(A.a([],s),q,p)),B.m)}}
 A.JG.prototype={
 aN(){this.bb()
+this.e=window.localStorage.getItem("key")
 $.B.as$.push(new A.a3z(this))},
-O(a,b){var s=null
-return new A.vS(A.a7R(A.alP(A.a([A.ww(A.f(document.cookie)+" asa",s,s,s,s,s,s),B.Jb,new A.i0(B.yx,A.aoV(B.yQ,new A.a3x(this)),s),new A.qb(this.d.b,new A.a3y(),s,t.AH)],t.V),B.Cr,B.qV),s,s),s)}}
+O(a,b){var s=null,r=this.e
+return new A.vS(A.a7R(A.alP(A.a([A.ww(r==null?"NAO DEU":r,s,s,s,s,s,s),B.Jb,new A.i0(B.yx,A.aoV(B.yQ,new A.a3x(this)),s),new A.qb(this.d.b,new A.a3y(),s,t.AH)],t.V),B.Cr,B.qV),s,s),s)}}
 A.a3z.prototype={
 $1(a){var s=this.a.d
 s.rV()
@@ -62318,12 +62319,12 @@ q(A.ms.prototype,"gn7","n8",0)
 q(A.dw.prototype,"gdS","ec",0)
 q(A.x1.prototype,"gvP","UU",0)
 q(A.rb.prototype,"gx0","a01",0)
-s(A,"ag2","A7",32)
 p(A.wn.prototype,"ga2e","a2f",28)
 j(A,"aa0",1,null,["$2$wrapWidth","$1"],["afE",function(a){return A.afE(a,null)}],387,0)
 s(A,"at4","af_",0)
 m(A,"a73","alD",107)
 m(A,"a74","alE",107)
+s(A,"ag2","A7",32)
 m(A,"ase","asa",108)
 m(A,"asf","asb",60)})();(function inheritance(){var s=hunkHelpers.mixin,r=hunkHelpers.mixinHard,q=hunkHelpers.inherit,p=hunkHelpers.inheritMany
 q(A.J,null)
